@@ -1,13 +1,19 @@
 import 'package:amwal/core/utils/appcolors.dart';
+import 'package:amwal/core/utils/prefrences.dart';
+import 'package:amwal/generated/l10n.dart';
+import 'package:amwal/welcome/presentation/Auth/login.dart';
+import 'package:amwal/welcome/presentation/QRcodepage.dart';
+import 'package:amwal/widgets/orange16text.dart';
 import 'package:amwal/widgets/white18text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lottie/lottie.dart';
 
-class OnBoardingTree extends StatelessWidget {
+class OnBoardingThree extends StatelessWidget {
   final String image;
   final String text1;
-  const OnBoardingTree({
+  const OnBoardingThree({
     super.key,
     required this.image,
     required this.text1,
@@ -22,13 +28,13 @@ class OnBoardingTree extends StatelessWidget {
           height: double.infinity,
           color: AppColor.appblueGray,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
+            padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SvgPicture.asset(
                       "assets/svg/AS logo white.svg",
@@ -38,11 +44,12 @@ class OnBoardingTree extends StatelessWidget {
                     ),
                   ],
                 ),
-                Image.asset(
-                  height: size.height / 2,
-                  width: size.width / 1.3,
+                LottieBuilder.asset(
                   image,
+                  height: size.height / 2,
+                  width: size.width / 1.5,
                   fit: BoxFit.contain,
+                  repeat: false,
                 ),
                 White18text(text: text1),
                 SizedBox(
@@ -50,37 +57,53 @@ class OnBoardingTree extends StatelessWidget {
                 ),
                 const Spacer(),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.whiteColor,
-                        shape: BoxShape.circle,
-                      ),
+                    TextButton(
+                      onPressed: () {
+                        Preferences.saveIsFirstTime(false);
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(
+                            builder: (context) => const QRCodePage(),
+                          ),
+                        );
+                      },
+                      child: Orange18text(text: S.of(context).startusingtheapp),
                     ),
-                    SizedBox(
-                      width: 20.w,
-                    ),
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.whiteColor,
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20.w,
-                    ),
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.apporange,
-                        shape: BoxShape.circle,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.apporange,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.whiteColor,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.whiteColor,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

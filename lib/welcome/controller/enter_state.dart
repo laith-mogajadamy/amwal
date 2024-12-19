@@ -17,14 +17,14 @@ class EnterState extends Equatable {
   final String token;
 
   final String name;
-  bool get isValidName => email.length > 8;
+  bool get isValidName => email.length >= 1;
   final String email;
-  bool get isValidEmail => email.length > 10;
+  bool get isValidEmail => email.length >= 1;
   final String password;
   final String retypePassword;
-  bool get isValidPassword => password.length > 6;
+  bool get isValidPassword => password.length >= 1;
   final String phone;
-  bool get isValidnumber => phone.length >= 10;
+  bool get isValidnumber => phone.length >= 1;
 
   final String city;
   final String location;
@@ -34,6 +34,8 @@ class EnterState extends Equatable {
   final FormSubmissionStatus formStatus;
   final String message;
 //
+  final String companyname;
+  final String currentFiscalYearCode;
 
   const EnterState({
     // this.user = const User(
@@ -68,6 +70,9 @@ class EnterState extends Equatable {
 
     this.message = '',
     this.formStatus = const InitialFormStatus(),
+    //
+    this.companyname = '',
+    this.currentFiscalYearCode = '',
   });
 
   EnterState copyWith({
@@ -98,7 +103,8 @@ class EnterState extends Equatable {
     FormSubmissionStatus? formStatus,
 
     //
-    String? yearsofpractice,
+    String? companyname,
+    String? currentFiscalYearCode,
   }) {
     return EnterState(
       islogedin: islogedin ?? this.islogedin,
@@ -128,6 +134,9 @@ class EnterState extends Equatable {
       message: message ?? this.message,
       formStatus: formStatus ?? this.formStatus,
       //
+      companyname: companyname ?? this.companyname,
+      currentFiscalYearCode:
+          currentFiscalYearCode ?? this.currentFiscalYearCode,
     );
   }
 
@@ -157,5 +166,7 @@ class EnterState extends Equatable {
         message,
         formStatus,
         //
+        companyname,
+        currentFiscalYearCode,
       ];
 }

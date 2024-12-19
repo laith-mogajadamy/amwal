@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Black16text extends StatelessWidget {
+class Orange18text extends StatelessWidget {
   final String text;
-  const Black16text({
+  const Orange18text({
     super.key,
     required this.text,
   });
@@ -16,8 +16,8 @@ class Black16text extends StatelessWidget {
       textAlign: TextAlign.center,
       text,
       style: GoogleFonts.cairo(
-        fontSize: 16.sp,
-        color: AppColor.apptitle,
+        fontSize: 18.sp,
+        color: AppColor.apporange,
         fontWeight: FontWeight.bold,
       ),
     );

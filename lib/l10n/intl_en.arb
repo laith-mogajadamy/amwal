@@ -1,4 +1,25 @@
 {
     "Changethelanguage": "Change the language",
-    "Chooselanguage": "Choose the language"
+    "Chooselanguage": "Choose the language",
+    "email": "email",
+    "emailvalidate": "Email or Username is too short",
+    "Password": "Password",
+    "RetypePassword": "Re-type Password ",
+    "passwordvalidate": "Password is too short",
+    "LogInbotton": "Log In",
+    "skip": "skip",
+    "chnagecompcode": "chnage the company code",
+    "startusingtheapp": "start using the app",
+    "turnonthecameraandscan": " scan the QR code",
+    "home": "Home",
+    "fastaccess": "fast access",
+    "customers": "customers",
+    "suppliers": "suppliers",
+    "purchases": "purchases",
+    "sales": "sales",
+    "warehouse": "warehouse",
+    "generalanalysis": "general analysis",
+    "humanresources": "human resources",
+    "fundsandbanks": "funds and banks",
+    "search": "search"
 }

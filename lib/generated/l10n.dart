@@ -69,6 +69,216 @@ class S {
       args: [],
     );
   }
+
+  /// `email`
+  String get email {
+    return Intl.message(
+      'email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email or Username is too short`
+  String get emailvalidate {
+    return Intl.message(
+      'Email or Username is too short',
+      name: 'emailvalidate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get Password {
+    return Intl.message(
+      'Password',
+      name: 'Password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Re-type Password `
+  String get RetypePassword {
+    return Intl.message(
+      'Re-type Password ',
+      name: 'RetypePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password is too short`
+  String get passwordvalidate {
+    return Intl.message(
+      'Password is too short',
+      name: 'passwordvalidate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log In`
+  String get LogInbotton {
+    return Intl.message(
+      'Log In',
+      name: 'LogInbotton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `skip`
+  String get skip {
+    return Intl.message(
+      'skip',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `chnage the company code`
+  String get chnagecompcode {
+    return Intl.message(
+      'chnage the company code',
+      name: 'chnagecompcode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `start using the app`
+  String get startusingtheapp {
+    return Intl.message(
+      'start using the app',
+      name: 'startusingtheapp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` scan the QR code`
+  String get turnonthecameraandscan {
+    return Intl.message(
+      ' scan the QR code',
+      name: 'turnonthecameraandscan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `fast access`
+  String get fastaccess {
+    return Intl.message(
+      'fast access',
+      name: 'fastaccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `customers`
+  String get customers {
+    return Intl.message(
+      'customers',
+      name: 'customers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `suppliers`
+  String get suppliers {
+    return Intl.message(
+      'suppliers',
+      name: 'suppliers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `purchases`
+  String get purchases {
+    return Intl.message(
+      'purchases',
+      name: 'purchases',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `sales`
+  String get sales {
+    return Intl.message(
+      'sales',
+      name: 'sales',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `warehouse`
+  String get warehouse {
+    return Intl.message(
+      'warehouse',
+      name: 'warehouse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `general analysis`
+  String get generalanalysis {
+    return Intl.message(
+      'general analysis',
+      name: 'generalanalysis',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `human resources`
+  String get humanresources {
+    return Intl.message(
+      'human resources',
+      name: 'humanresources',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `funds and banks`
+  String get fundsandbanks {
+    return Intl.message(
+      'funds and banks',
+      name: 'fundsandbanks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `search`
+  String get search {
+    return Intl.message(
+      'search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

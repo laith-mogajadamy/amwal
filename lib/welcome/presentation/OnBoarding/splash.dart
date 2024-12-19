@@ -1,8 +1,11 @@
 import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/core/utils/prefrences.dart';
 import 'package:amwal/screens/language_change.dart';
+import 'package:amwal/screens/pages/pages.dart';
 import 'package:amwal/welcome/controller/enter_bloc.dart';
+import 'package:amwal/welcome/presentation/Auth/login.dart';
 import 'package:amwal/welcome/presentation/OnBoarding/obPage.dart';
+import 'package:amwal/welcome/presentation/QRcodepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -29,12 +32,12 @@ class _SplashState extends State<Splash> {
       listener: (context, state) {
         print("splash");
         print(state.message);
-
         print(state.islogedin);
         Future.delayed(
           const Duration(seconds: 2),
           () {
             bool? firsttime = Preferences.getIsFirstTime();
+
             if (firsttime!) {
               Navigator.pushReplacement(
                 context,
@@ -44,19 +47,18 @@ class _SplashState extends State<Splash> {
               );
             } else {
               if (state.islogedin == "true") {
-                // Navigator.pushReplacement(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => const MyPages(),
-                //   ),
-                // );
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MyPages(),
+                  ),
+                );
               } else if (state.islogedin == "false") {
-                // Navigator.pushReplacement(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => const Enter(),
-                //   ),
-                // );
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const Login(),
+                  ),
+                );
               }
             }
           },

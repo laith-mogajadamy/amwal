@@ -1,4 +1,26 @@
 {
     "Changethelanguage": "غير اللغة",
-    "Chooselanguage": "اختر اللغة"
+    "Chooselanguage": "اختر اللغة",
+    "email": "البريد الإلكتروني",
+    "emailvalidate": "البريد الإلكتروني قصير جدا",
+    "Password": "كلمة السر",
+    "RetypePassword": "اعد كتابة كلمة السر",
+    "passwordvalidate": "كلمة السر قصيرة جدا",
+    "LogInbotton": "تسجيل الدخول",
+    "donthaveanaccount": "لا تمتلك حساب؟",
+    "skip": "تخطي",
+    "chnagecompcode": "تغيير رمز المؤسسة",
+    "startusingtheapp": "بدء الاستخدام",
+    "turnonthecameraandscan": "تشغيل الكاميرا ومسح QR",
+    "home": "الرئيسية",
+    "fastaccess": "وصول سريع",
+    "customers": "الزبائن",
+    "suppliers": "الموردون",
+    "purchases": "المشتريات",
+    "sales": "المبيعات",
+    "warehouse": "المخازن",
+    "generalanalysis": "الحسابات العامة",
+    "humanresources": "الموارد البشرية",
+    "fundsandbanks": "الصناديق والمصارف",
+    "search": "البحث"
 }

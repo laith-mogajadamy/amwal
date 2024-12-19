@@ -116,8 +116,3 @@ class Logout extends EnterEvent {
   @override
   List<Object?> get props => [token];
 }
-
-class ClientRegisterSubmitted extends EnterEvent {
-  @override
-  List<Object?> get props => [];
-}

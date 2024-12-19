@@ -12,7 +12,7 @@ class UserModel extends User {
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
         guid: json['guid'] ?? '',
         code: json['code'] ?? '',
-        name: json['name'] ?? '',
+        name: json['Name'] ?? '',
         number: json['number'] ?? 0,
         isAdmin: json['isAdmin'] ?? false,
         // languages: List<LanguageModel>.from(

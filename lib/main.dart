@@ -32,7 +32,9 @@ class MyApp extends StatelessWidget {
             splitScreenMode: true,
             builder: (BuildContext context, Widget? child) {
               return MaterialApp(
-                locale: Locale(state.language),
+                locale: const Locale('en'
+                    // state.language,
+                    ),
                 localizationsDelegates: const [
                   S.delegate,
                   GlobalMaterialLocalizations.delegate,

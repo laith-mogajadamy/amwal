@@ -1,9 +1,15 @@
 import 'package:amwal/core/utils/appcolors.dart';
+import 'package:amwal/core/utils/prefrences.dart';
+import 'package:amwal/generated/l10n.dart';
+import 'package:amwal/welcome/presentation/Auth/login.dart';
+import 'package:amwal/welcome/presentation/QRcodepage.dart';
 import 'package:amwal/widgets/black18text.dart';
+import 'package:amwal/widgets/orange16text.dart';
 import 'package:amwal/widgets/white18text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
 
 class OnBoardingTwo extends StatelessWidget {
   final String image;
@@ -22,15 +28,15 @@ class OnBoardingTwo extends StatelessWidget {
       child: Scaffold(
         body: Container(
           height: double.infinity,
-          color: AppColor.whiteColorBG,
+          color: AppColor.whiteColor,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
+            padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 15.h),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SvgPicture.asset(
                       "assets/svg/AS logo black.svg",
@@ -40,10 +46,10 @@ class OnBoardingTwo extends StatelessWidget {
                     ),
                   ],
                 ),
-                Image.asset(
+                LottieBuilder.asset(
+                  image,
                   height: size.height / 2,
                   width: size.width / 1.3,
-                  image,
                   fit: BoxFit.contain,
                 ),
                 Black18text(text: text1),
@@ -52,37 +58,53 @@ class OnBoardingTwo extends StatelessWidget {
                 ),
                 const Spacer(),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.appbuleBG,
-                        shape: BoxShape.circle,
-                      ),
+                    TextButton(
+                      onPressed: () {
+                        Preferences.saveIsFirstTime(false);
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const QRCodePage(),
+                          ),
+                        );
+                      },
+                      child: Orange18text(text: S.of(context).skip),
                     ),
-                    SizedBox(
-                      width: 20.w,
-                    ),
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.apporange,
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20.w,
-                    ),
-                    Container(
-                      height: 10.h,
-                      width: 10.w,
-                      decoration: BoxDecoration(
-                        color: AppColor.appbuleBG,
-                        shape: BoxShape.circle,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.appbuleBG,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.apporange,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        Container(
+                          height: 10.h,
+                          width: 10.w,
+                          decoration: BoxDecoration(
+                            color: AppColor.appbuleBG,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

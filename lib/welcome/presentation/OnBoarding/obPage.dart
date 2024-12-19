@@ -1,11 +1,13 @@
 import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/core/utils/prefrences.dart';
+import 'package:amwal/welcome/presentation/Auth/login.dart';
 import 'package:amwal/welcome/presentation/OnBoarding/on_boarding_one.dart';
 import 'package:amwal/welcome/presentation/OnBoarding/on_boarding_three.dart';
 import 'package:amwal/welcome/presentation/OnBoarding/on_boarding_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:lottie/lottie.dart';
 
 class OBPage extends StatefulWidget {
   const OBPage({super.key});
@@ -21,19 +23,21 @@ class _OBPageState extends State<OBPage> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     final pages = [
       const OnBoardingOne(
-        image: "assets/images/OB 1 image.png",
+        image: "assets/lottie/Calendar.json",
         text1:
             "استعلام الحركات اليومية المحاسبية للمنشآت المختلفة النشاط، سواء كانت صناعية أو تجارية. ",
       ),
       const OnBoardingTwo(
-        image: "assets/images/OB 2 image.png",
+        image: "assets/lottie/business-investor.json",
         text1:
             "استعراض تقارير الحسابات العامة والزبائن والموردين وحركة المواد والتصنيع في المخازن.",
       ),
-      const OnBoardingTree(
-        image: "assets/images/OB 2 image.png",
+      const OnBoardingThree(
+        image: "assets/lottie/amwal2New.json",
         text1: "مع تطبيق أموال، تستطيع تتبع أعمالك بسهولة واحترافية. ",
       ),
     ];
@@ -53,16 +57,17 @@ class _OBPageState extends State<OBPage> {
               onPageChangeCallback: onPageChangeCallback,
               pages: pages,
               enableSideReveal: false,
-              preferDragFromRevealedArea: true,
+              preferDragFromRevealedArea: false,
               waveType: WaveType.liquidReveal,
-              slideIconWidget: IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.arrow_back_ios,
-                    size: 25.r,
-                  )),
+              positionSlideIcon: 0.8,
+              slideIconWidget: Icon(
+                Icons.arrow_back_ios_new_rounded,
+                size: 30.r,
+                color: AppColor.apporange,
+              ),
             ),
           ),
+
           // Padding(
           //   padding: EdgeInsets.only(bottom: 10.h),
           //   child: ElevatedButton(
@@ -100,7 +105,11 @@ class _OBPageState extends State<OBPage> {
       );
     } else {
       Preferences.saveIsFirstTime(false);
-      Navigator.of(context).pushReplacementNamed("/pages");
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => const Login(),
+        ),
+      );
     }
   }
 }

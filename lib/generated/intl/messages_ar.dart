@@ -23,6 +23,36 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Changethelanguage": MessageLookupByLibrary.simpleMessage("غير اللغة"),
-        "Chooselanguage": MessageLookupByLibrary.simpleMessage("اختر اللغة")
+        "Chooselanguage": MessageLookupByLibrary.simpleMessage("اختر اللغة"),
+        "LogInbotton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "Password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+        "RetypePassword":
+            MessageLookupByLibrary.simpleMessage("اعد كتابة كلمة السر"),
+        "chnagecompcode":
+            MessageLookupByLibrary.simpleMessage("تغيير رمز المؤسسة"),
+        "customers": MessageLookupByLibrary.simpleMessage("الزبائن"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "emailvalidate":
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني قصير جدا"),
+        "fastaccess": MessageLookupByLibrary.simpleMessage("وصول سريع"),
+        "fundsandbanks":
+            MessageLookupByLibrary.simpleMessage("الصناديق والمصارف"),
+        "generalanalysis":
+            MessageLookupByLibrary.simpleMessage("الحسابات العامة"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "humanresources":
+            MessageLookupByLibrary.simpleMessage("الموارد البشرية"),
+        "passwordvalidate":
+            MessageLookupByLibrary.simpleMessage("كلمة السر قصيرة جدا"),
+        "purchases": MessageLookupByLibrary.simpleMessage("المشتريات"),
+        "sales": MessageLookupByLibrary.simpleMessage("المبيعات"),
+        "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "startusingtheapp":
+            MessageLookupByLibrary.simpleMessage("بدء الاستخدام"),
+        "suppliers": MessageLookupByLibrary.simpleMessage("الموردون"),
+        "turnonthecameraandscan":
+            MessageLookupByLibrary.simpleMessage("تشغيل الكاميرا ومسح QR"),
+        "warehouse": MessageLookupByLibrary.simpleMessage("المخازن")
       };
 }

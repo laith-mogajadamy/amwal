@@ -25,6 +25,36 @@ class MessageLookup extends MessageLookupByLibrary {
         "Changethelanguage":
             MessageLookupByLibrary.simpleMessage("Change the language"),
         "Chooselanguage":
-            MessageLookupByLibrary.simpleMessage("Choose the language")
+            MessageLookupByLibrary.simpleMessage("Choose the language"),
+        "LogInbotton": MessageLookupByLibrary.simpleMessage("Log In"),
+        "Password": MessageLookupByLibrary.simpleMessage("Password"),
+        "RetypePassword":
+            MessageLookupByLibrary.simpleMessage("Re-type Password "),
+        "chnagecompcode":
+            MessageLookupByLibrary.simpleMessage("chnage the company code"),
+        "customers": MessageLookupByLibrary.simpleMessage("customers"),
+        "email": MessageLookupByLibrary.simpleMessage("email"),
+        "emailvalidate": MessageLookupByLibrary.simpleMessage(
+            "Email or Username is too short"),
+        "fastaccess": MessageLookupByLibrary.simpleMessage("fast access"),
+        "fundsandbanks":
+            MessageLookupByLibrary.simpleMessage("funds and banks"),
+        "generalanalysis":
+            MessageLookupByLibrary.simpleMessage("general analysis"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "humanresources":
+            MessageLookupByLibrary.simpleMessage("human resources"),
+        "passwordvalidate":
+            MessageLookupByLibrary.simpleMessage("Password is too short"),
+        "purchases": MessageLookupByLibrary.simpleMessage("purchases"),
+        "sales": MessageLookupByLibrary.simpleMessage("sales"),
+        "search": MessageLookupByLibrary.simpleMessage("search"),
+        "skip": MessageLookupByLibrary.simpleMessage("skip"),
+        "startusingtheapp":
+            MessageLookupByLibrary.simpleMessage("start using the app"),
+        "suppliers": MessageLookupByLibrary.simpleMessage("suppliers"),
+        "turnonthecameraandscan":
+            MessageLookupByLibrary.simpleMessage(" scan the QR code"),
+        "warehouse": MessageLookupByLibrary.simpleMessage("warehouse")
       };
 }
