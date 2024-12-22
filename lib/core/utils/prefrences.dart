@@ -51,6 +51,10 @@ class Preferences {
     }
   }
 
+  static void removeToken() {
+    preferences!.remove(usertoken);
+  }
+
   static void saveemail(String email) async {
     preferences!.setString(useremail, email);
   }

@@ -21,5 +21,17 @@
     "generalanalysis": "general analysis",
     "humanresources": "human resources",
     "fundsandbanks": "funds and banks",
-    "search": "search"
+    "search": "search",
+    "salesDebtLimit": "Sales Debt Limit",
+    "currentBalance": "Current Balance",
+    "address": "Address",
+    "showdetails": "show details",
+    "name": "Name",
+    "advancedsearch": "advanced search",
+    "currency": "currency",
+    "bransh": "bransh",
+    "agent": "agent",
+    "acounttybe": "acount tybe",
+    "city": "city",
+    "acountstatment": "acount statment"
 }

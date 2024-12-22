@@ -1,6 +1,7 @@
 import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/core/utils/prefrences.dart';
 import 'package:amwal/generated/l10n.dart';
+import 'package:amwal/screens/customers/controller/customers_bloc.dart';
 import 'package:amwal/welcome/controller/enter_bloc.dart';
 import 'package:amwal/welcome/presentation/OnBoarding/splash.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider<EnterBloc>(
           create: (context) => EnterBloc()..add(Getuser()),
+        ),
+        BlocProvider<CustomersBloc>(
+          create: (context) => CustomersBloc(),
         ),
       ],
       child: BlocBuilder<EnterBloc, EnterState>(
@@ -49,10 +53,13 @@ class MyApp extends StatelessWidget {
                   scaffoldBackgroundColor: AppColor.whiteColorBG,
                   cardTheme: const CardTheme(color: Colors.white),
                   // canvasColor: Colors.transparent,
-                  // colorScheme: ColorScheme.fromSeed(
-                  //   seedColor: Colors.black,
-                  //   primary: Colors.black,
-                  // ),
+                  colorScheme: ColorScheme.fromSeed(
+                    seedColor: Colors.white,
+                    // primary: Colors.white,
+                    // onPrimary: Colors.white,
+                    // onSecondary: Colors.white,
+                    onSurface: Colors.white,
+                  ),
                   useMaterial3: true,
                 ),
                 home: const Splash(),

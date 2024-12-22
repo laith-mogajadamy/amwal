@@ -28,8 +28,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "Password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "RetypePassword":
             MessageLookupByLibrary.simpleMessage("اعد كتابة كلمة السر"),
+        "acountstatment": MessageLookupByLibrary.simpleMessage("كشف الحساب"),
+        "acounttybe": MessageLookupByLibrary.simpleMessage("نوع الحساب"),
+        "address": MessageLookupByLibrary.simpleMessage("العنوان"),
+        "advancedsearch": MessageLookupByLibrary.simpleMessage("بحث متقدم"),
+        "agent": MessageLookupByLibrary.simpleMessage("المندوب"),
+        "bransh": MessageLookupByLibrary.simpleMessage("الفرع"),
         "chnagecompcode":
             MessageLookupByLibrary.simpleMessage("تغيير رمز المؤسسة"),
+        "city": MessageLookupByLibrary.simpleMessage("المدينة"),
+        "currency": MessageLookupByLibrary.simpleMessage("العملة"),
+        "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "customers": MessageLookupByLibrary.simpleMessage("الزبائن"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailvalidate":
@@ -42,11 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "humanresources":
             MessageLookupByLibrary.simpleMessage("الموارد البشرية"),
+        "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "passwordvalidate":
             MessageLookupByLibrary.simpleMessage("كلمة السر قصيرة جدا"),
         "purchases": MessageLookupByLibrary.simpleMessage("المشتريات"),
         "sales": MessageLookupByLibrary.simpleMessage("المبيعات"),
+        "salesDebtLimit": MessageLookupByLibrary.simpleMessage("حد الدين"),
         "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "showdetails": MessageLookupByLibrary.simpleMessage("عرض التفاصيل"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "startusingtheapp":
             MessageLookupByLibrary.simpleMessage("بدء الاستخدام"),

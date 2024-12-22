@@ -22,5 +22,17 @@
     "generalanalysis": "الحسابات العامة",
     "humanresources": "الموارد البشرية",
     "fundsandbanks": "الصناديق والمصارف",
-    "search": "البحث"
+    "search": "البحث",
+    "salesDebtLimit": "حد الدين",
+    "currentBalance": "الرصيد الحالي",
+    "address": "العنوان",
+    "showdetails": "عرض التفاصيل",
+    "name": "الاسم",
+    "advancedsearch": "بحث متقدم",
+    "currency": "العملة",
+    "bransh": "الفرع",
+    "agent": "المندوب",
+    "acounttybe": "نوع الحساب",
+    "city": "المدينة",
+    "acountstatment": "كشف الحساب"
 }

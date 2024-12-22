@@ -30,8 +30,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "Password": MessageLookupByLibrary.simpleMessage("Password"),
         "RetypePassword":
             MessageLookupByLibrary.simpleMessage("Re-type Password "),
+        "acountstatment":
+            MessageLookupByLibrary.simpleMessage("acount statment"),
+        "acounttybe": MessageLookupByLibrary.simpleMessage("acount tybe"),
+        "address": MessageLookupByLibrary.simpleMessage("Address"),
+        "advancedsearch":
+            MessageLookupByLibrary.simpleMessage("advanced search"),
+        "agent": MessageLookupByLibrary.simpleMessage("agent"),
+        "bransh": MessageLookupByLibrary.simpleMessage("bransh"),
         "chnagecompcode":
             MessageLookupByLibrary.simpleMessage("chnage the company code"),
+        "city": MessageLookupByLibrary.simpleMessage("city"),
+        "currency": MessageLookupByLibrary.simpleMessage("currency"),
+        "currentBalance":
+            MessageLookupByLibrary.simpleMessage("Current Balance"),
         "customers": MessageLookupByLibrary.simpleMessage("customers"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "emailvalidate": MessageLookupByLibrary.simpleMessage(
@@ -44,11 +56,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "humanresources":
             MessageLookupByLibrary.simpleMessage("human resources"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
         "passwordvalidate":
             MessageLookupByLibrary.simpleMessage("Password is too short"),
         "purchases": MessageLookupByLibrary.simpleMessage("purchases"),
         "sales": MessageLookupByLibrary.simpleMessage("sales"),
+        "salesDebtLimit":
+            MessageLookupByLibrary.simpleMessage("Sales Debt Limit"),
         "search": MessageLookupByLibrary.simpleMessage("search"),
+        "showdetails": MessageLookupByLibrary.simpleMessage("show details"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startusingtheapp":
             MessageLookupByLibrary.simpleMessage("start using the app"),

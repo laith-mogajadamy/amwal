@@ -196,18 +196,13 @@ class _LoginState extends State<Login> {
                                     ),
                                   ),
                                 ),
-                                child: (state.formStatus is FormSubmitting)
-                                    ? CircularProgressIndicator(
-                                        color: AppColor.whiteColor,
-                                        strokeWidth: 4.w,
-                                      )
-                                    : Text(
-                                        S.of(context).chnagecompcode,
-                                        style: TextStyle(
-                                            fontSize: 18.sp,
-                                            color: AppColor.appblueGray,
-                                            fontWeight: FontWeight.bold),
-                                      ),
+                                child: Text(
+                                  S.of(context).chnagecompcode,
+                                  style: TextStyle(
+                                      fontSize: 18.sp,
+                                      color: AppColor.appblueGray,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ],
                           ),

@@ -2,12 +2,7 @@ part of 'enter_bloc.dart';
 
 class EnterState extends Equatable {
   final String islogedin;
-  final bool bottom;
-  final bool registerbottom;
 
-  final File? fimage;
-
-  final FormSubmissionStatus editStatus;
   final FormSubmissionStatus logoutStatus;
   final String language;
 
@@ -37,14 +32,14 @@ class EnterState extends Equatable {
   final String companyname;
   final String currentFiscalYearCode;
 
+//
+  final List<Currency> currencys;
+  final Currency selectedcurrency;
+
   const EnterState({
     // this.user = const User(
     //     token: "", email: "", name: "", number: "", type: "", password: ""),
     this.islogedin = '',
-    this.bottom = false,
-    this.registerbottom = false,
-    this.fimage,
-    this.editStatus = const InitialFormStatus(),
     this.logoutStatus = const InitialFormStatus(),
     this.language = 'en',
 
@@ -73,14 +68,13 @@ class EnterState extends Equatable {
     //
     this.companyname = '',
     this.currentFiscalYearCode = '',
+    //
+    this.currencys = const [],
+    this.selectedcurrency = const Currency(guid: '', code: '', iddefault: ''),
   });
 
   EnterState copyWith({
     String? islogedin,
-    bool? bottom,
-    bool? registerbottom,
-    File? fimage,
-    FormSubmissionStatus? editStatus,
     FormSubmissionStatus? logoutStatus,
     String? language,
 
@@ -105,14 +99,13 @@ class EnterState extends Equatable {
     //
     String? companyname,
     String? currentFiscalYearCode,
+    //
+    List<Currency>? currencys,
+    Currency? selectedcurrency,
   }) {
     return EnterState(
       islogedin: islogedin ?? this.islogedin,
-      bottom: bottom ?? this.bottom,
-      registerbottom: registerbottom ?? this.registerbottom,
-      fimage: fimage ?? this.fimage,
 
-      editStatus: editStatus ?? this.editStatus,
       logoutStatus: logoutStatus ?? this.logoutStatus,
       language: language ?? this.language,
 
@@ -137,17 +130,15 @@ class EnterState extends Equatable {
       companyname: companyname ?? this.companyname,
       currentFiscalYearCode:
           currentFiscalYearCode ?? this.currentFiscalYearCode,
+      //
+      currencys: currencys ?? this.currencys,
+      selectedcurrency: selectedcurrency ?? this.selectedcurrency,
     );
   }
 
   @override
   List<Object?> get props => [
         islogedin,
-        bottom,
-        registerbottom,
-        fimage,
-
-        editStatus,
         logoutStatus,
         language,
         //
@@ -168,5 +159,8 @@ class EnterState extends Equatable {
         //
         companyname,
         currentFiscalYearCode,
+        //
+        currencys,
+        selectedcurrency,
       ];
 }

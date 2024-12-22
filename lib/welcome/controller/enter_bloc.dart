@@ -1,11 +1,13 @@
 // ignore_for_file: avoid_print
 import 'dart:convert';
-import 'dart:io';
 import 'package:amwal/core/services/auth.dart';
 import 'package:amwal/core/utils/formstatus.dart';
 import 'package:amwal/core/utils/prefrences.dart';
+import 'package:amwal/model/currency.dart';
+import 'package:amwal/model/currency_model.dart';
 import 'package:amwal/model/user.dart';
 import 'package:amwal/model/usermodel.dart';
+import 'package:amwal/welcome/data/veriabels_request.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:http/http.dart' as http;
@@ -57,6 +59,8 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
               islogedin: "true",
             ),
           );
+          Preferences.removeToken();
+          print("save new token");
           Preferences.savetoken(responsemap['data']?['token']);
           print("token:${responsemap['data']?['token']}");
           print("user:${state.user}");
@@ -77,6 +81,7 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
         print("state.user");
         print(state.user);
       }
+      add(GetCurrency());
     });
     //
 
@@ -85,25 +90,6 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
       emit(
         state.copyWith(
           language: event.language,
-        ),
-      );
-    });
-    //
-
-    on<Bottomshow>((event, emit) async {
-      emit(
-        state.copyWith(
-          bottom: event.bottom,
-        ),
-      );
-    });
-    //
-    on<RegisterBottomshow>((event, emit) async {
-      print(" RegisterBottomshow${event.bottom}");
-
-      emit(
-        state.copyWith(
-          registerbottom: event.bottom,
         ),
       );
     });
@@ -121,22 +107,11 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
         password: event.password,
       ));
     });
-    on<LoginReTypePasswordChanged>((event, emit) async {
-      emit(state.copyWith(
-        formStatus: const InitialFormStatus(),
-        retypePassword: event.retypePassword,
-      ));
-    });
+
     on<LoginNameChanged>((event, emit) async {
       emit(state.copyWith(
         formStatus: const InitialFormStatus(),
         name: event.name,
-      ));
-    });
-    on<LoginNumberChanged>((event, emit) async {
-      emit(state.copyWith(
-        formStatus: const InitialFormStatus(),
-        phone: event.number,
       ));
     });
 
@@ -188,6 +163,8 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
               islogedin: "true",
             ),
           );
+          Preferences.removeToken();
+          print("save new token");
           Preferences.savetoken(responsemap['data']?['token']);
           print("token:${responsemap['data']?['token']}");
           print("user:${state.user}");
@@ -248,6 +225,41 @@ class EnterBloc extends Bloc<EnterEvent, EnterState> {
         );
         print(state.logoutStatus);
       }
+    });
+    on<GetCurrency>((event, emit) async {
+      print("GetCurrency");
+
+      http.Response response = await VeriabelsRequest.getcurrency();
+      var responsemap = await jsonDecode(response.body);
+      print("message==${state.message}");
+      print("*********");
+      print(responsemap);
+      print("statusCode==${response.statusCode}");
+      print("*********");
+      if (response.statusCode == 200) {
+        emit(
+          state.copyWith(
+            currencys: List<CurrencyModel>.from(
+              (responsemap['data'] as List).map(
+                (e) => CurrencyModel.fromJson(e),
+              ),
+            ),
+            message: responsemap['message'],
+          ),
+        );
+      } else {
+        emit(
+          state.copyWith(
+            message: responsemap['message'],
+          ),
+        );
+      }
+    });
+    //
+    on<CurrencyChanged>((event, emit) async {
+      emit(state.copyWith(
+        selectedcurrency: event.currency,
+      ));
     });
   }
 }

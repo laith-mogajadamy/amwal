@@ -18,38 +18,6 @@ class LanguageChanged extends EnterEvent {
   List<Object?> get props => [language];
 }
 
-class ImageChange extends EnterEvent {
-  final File? fimage;
-
-  ImageChange({this.fimage});
-
-  @override
-  List<Object?> get props => [fimage];
-}
-
-class Bottomshow extends EnterEvent {
-  final bool? bottom;
-  final String? destenation;
-
-  Bottomshow({this.bottom, this.destenation});
-
-  @override
-  List<Object?> get props => [bottom, destenation];
-}
-
-class RegisterBottomshow extends EnterEvent {
-  final bool? bottom;
-
-  RegisterBottomshow({
-    this.bottom,
-  });
-
-  @override
-  List<Object?> get props => [
-        bottom,
-      ];
-}
-
 class LoginEmailChanged extends EnterEvent {
   final String? email;
 
@@ -68,15 +36,6 @@ class LoginPasswordChanged extends EnterEvent {
   List<Object?> get props => [password];
 }
 
-class LoginReTypePasswordChanged extends EnterEvent {
-  final String? retypePassword;
-
-  LoginReTypePasswordChanged({this.retypePassword});
-
-  @override
-  List<Object?> get props => [retypePassword];
-}
-
 class LoginNameChanged extends EnterEvent {
   final String? name;
 
@@ -84,15 +43,6 @@ class LoginNameChanged extends EnterEvent {
 
   @override
   List<Object?> get props => [name];
-}
-
-class LoginNumberChanged extends EnterEvent {
-  final String? number;
-
-  LoginNumberChanged({this.number});
-
-  @override
-  List<Object?> get props => [number];
 }
 
 class CityChanged extends EnterEvent {
@@ -115,4 +65,21 @@ class Logout extends EnterEvent {
 
   @override
   List<Object?> get props => [token];
+}
+
+//
+class GetCurrency extends EnterEvent {
+  GetCurrency();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class CurrencyChanged extends EnterEvent {
+  final Currency? currency;
+
+  CurrencyChanged({this.currency});
+
+  @override
+  List<Object?> get props => [currency];
 }

@@ -15,6 +15,8 @@ class Black16text extends StatelessWidget {
     return Text(
       textAlign: TextAlign.center,
       text,
+      softWrap: true,
+      overflow: TextOverflow.visible,
       style: GoogleFonts.cairo(
         fontSize: 16.sp,
         color: AppColor.apptitle,

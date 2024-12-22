@@ -10,4 +10,5 @@ class AppColor {
   static final appblueGray = fromCssColor('#396575');
   static final apptitle = fromCssColor('#6D6D6D');
   static final applightgray = fromCssColor('#EBEBEB');
+  static final orangefont = fromCssColor('#E9A716');
 }

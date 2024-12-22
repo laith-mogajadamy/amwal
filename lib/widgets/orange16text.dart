@@ -17,7 +17,7 @@ class Orange18text extends StatelessWidget {
       text,
       style: GoogleFonts.cairo(
         fontSize: 18.sp,
-        color: AppColor.apporange,
+        color: AppColor.orangefont,
         fontWeight: FontWeight.bold,
       ),
     );
