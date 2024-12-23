@@ -1,7 +1,7 @@
 import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/generated/l10n.dart';
-import 'package:amwal/welcome/presentation/QR_code_scan.dart';
-import 'package:amwal/widgets/black18text.dart';
+import 'package:amwal/welcome/presentation/qr_code_scan.dart';
+import 'package:amwal/widgets/font/black18text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';

@@ -390,11 +390,131 @@ class S {
     );
   }
 
-  /// `acount statment`
+  /// `account statment`
   String get acountstatment {
     return Intl.message(
-      'acount statment',
+      'account statment',
       name: 'acountstatment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `agent card`
+  String get agentcard {
+    return Intl.message(
+      'agent card',
+      name: 'agentcard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `total`
+  String get total {
+    return Intl.message(
+      'total',
+      name: 'total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Detailed`
+  String get detailed {
+    return Intl.message(
+      'Detailed',
+      name: 'detailed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `no date`
+  String get nodate {
+    return Intl.message(
+      'no date',
+      name: 'nodate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `from`
+  String get from {
+    return Intl.message(
+      'from',
+      name: 'from',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `to`
+  String get to {
+    return Intl.message(
+      'to',
+      name: 'to',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `show`
+  String get show {
+    return Intl.message(
+      'show',
+      name: 'show',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `openning balance`
+  String get openningbalance {
+    return Intl.message(
+      'openning balance',
+      name: 'openningbalance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `document`
+  String get document {
+    return Intl.message(
+      'document',
+      name: 'document',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `date`
+  String get date {
+    return Intl.message(
+      'date',
+      name: 'date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `debtor`
+  String get debtor {
+    return Intl.message(
+      'debtor',
+      name: 'debtor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `creditor`
+  String get creditor {
+    return Intl.message(
+      'creditor',
+      name: 'creditor',
       desc: '',
       args: [],
     );

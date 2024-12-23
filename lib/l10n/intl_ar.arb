@@ -34,5 +34,17 @@
     "agent": "المندوب",
     "acounttybe": "نوع الحساب",
     "city": "المدينة",
-    "acountstatment": "كشف الحساب"
+    "acountstatment": "كشف الحساب",
+    "agentcard": "بطاقة العميل",
+    "total": "إجمالي",
+    "detailed": "تفصيلي",
+    "nodate": "لايوجد تاريخ",
+    "from": "من",
+    "to": "الى",
+    "show": "عرض",
+    "openningbalance": "الرصيد الافتتاحي",
+    "document": "المستند",
+    "date": "التاريخ",
+    "debtor": "مدين",
+    "creditor": "دائن"
 }

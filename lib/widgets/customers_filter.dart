@@ -1,12 +1,10 @@
 import 'package:amwal/generated/l10n.dart';
-import 'package:amwal/screens/customers/controller/customers_bloc.dart';
-import 'package:amwal/widgets/black16text.dart';
-import 'package:amwal/widgets/blue16text.dart';
+import 'package:amwal/widgets/font/black16text.dart';
+import 'package:amwal/widgets/font/blue16text.dart';
+import 'package:amwal/widgets/font/white16text.dart';
 import 'package:amwal/widgets/search_text_field.dart';
 import 'package:amwal/widgets/select_currency.dart';
-import 'package:amwal/widgets/white16text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 

@@ -31,24 +31,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "RetypePassword":
             MessageLookupByLibrary.simpleMessage("Re-type Password "),
         "acountstatment":
-            MessageLookupByLibrary.simpleMessage("acount statment"),
+            MessageLookupByLibrary.simpleMessage("account statment"),
         "acounttybe": MessageLookupByLibrary.simpleMessage("acount tybe"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "advancedsearch":
             MessageLookupByLibrary.simpleMessage("advanced search"),
         "agent": MessageLookupByLibrary.simpleMessage("agent"),
+        "agentcard": MessageLookupByLibrary.simpleMessage("agent card"),
         "bransh": MessageLookupByLibrary.simpleMessage("bransh"),
         "chnagecompcode":
             MessageLookupByLibrary.simpleMessage("chnage the company code"),
         "city": MessageLookupByLibrary.simpleMessage("city"),
+        "creditor": MessageLookupByLibrary.simpleMessage("creditor"),
         "currency": MessageLookupByLibrary.simpleMessage("currency"),
         "currentBalance":
             MessageLookupByLibrary.simpleMessage("Current Balance"),
         "customers": MessageLookupByLibrary.simpleMessage("customers"),
+        "date": MessageLookupByLibrary.simpleMessage("date"),
+        "debtor": MessageLookupByLibrary.simpleMessage("debtor"),
+        "detailed": MessageLookupByLibrary.simpleMessage("Detailed"),
+        "document": MessageLookupByLibrary.simpleMessage("document"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "emailvalidate": MessageLookupByLibrary.simpleMessage(
             "Email or Username is too short"),
         "fastaccess": MessageLookupByLibrary.simpleMessage("fast access"),
+        "from": MessageLookupByLibrary.simpleMessage("from"),
         "fundsandbanks":
             MessageLookupByLibrary.simpleMessage("funds and banks"),
         "generalanalysis":
@@ -57,6 +64,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "humanresources":
             MessageLookupByLibrary.simpleMessage("human resources"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "nodate": MessageLookupByLibrary.simpleMessage("no date"),
+        "openningbalance":
+            MessageLookupByLibrary.simpleMessage("openning balance"),
         "passwordvalidate":
             MessageLookupByLibrary.simpleMessage("Password is too short"),
         "purchases": MessageLookupByLibrary.simpleMessage("purchases"),
@@ -64,11 +74,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "salesDebtLimit":
             MessageLookupByLibrary.simpleMessage("Sales Debt Limit"),
         "search": MessageLookupByLibrary.simpleMessage("search"),
+        "show": MessageLookupByLibrary.simpleMessage("show"),
         "showdetails": MessageLookupByLibrary.simpleMessage("show details"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startusingtheapp":
             MessageLookupByLibrary.simpleMessage("start using the app"),
         "suppliers": MessageLookupByLibrary.simpleMessage("suppliers"),
+        "to": MessageLookupByLibrary.simpleMessage("to"),
+        "total": MessageLookupByLibrary.simpleMessage("total"),
         "turnonthecameraandscan":
             MessageLookupByLibrary.simpleMessage(" scan the QR code"),
         "warehouse": MessageLookupByLibrary.simpleMessage("warehouse")

@@ -33,17 +33,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "advancedsearch": MessageLookupByLibrary.simpleMessage("بحث متقدم"),
         "agent": MessageLookupByLibrary.simpleMessage("المندوب"),
+        "agentcard": MessageLookupByLibrary.simpleMessage("بطاقة العميل"),
         "bransh": MessageLookupByLibrary.simpleMessage("الفرع"),
         "chnagecompcode":
             MessageLookupByLibrary.simpleMessage("تغيير رمز المؤسسة"),
         "city": MessageLookupByLibrary.simpleMessage("المدينة"),
+        "creditor": MessageLookupByLibrary.simpleMessage("دائن"),
         "currency": MessageLookupByLibrary.simpleMessage("العملة"),
         "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "customers": MessageLookupByLibrary.simpleMessage("الزبائن"),
+        "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
+        "debtor": MessageLookupByLibrary.simpleMessage("مدين"),
+        "detailed": MessageLookupByLibrary.simpleMessage("تفصيلي"),
+        "document": MessageLookupByLibrary.simpleMessage("المستند"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailvalidate":
             MessageLookupByLibrary.simpleMessage("البريد الإلكتروني قصير جدا"),
         "fastaccess": MessageLookupByLibrary.simpleMessage("وصول سريع"),
+        "from": MessageLookupByLibrary.simpleMessage("من"),
         "fundsandbanks":
             MessageLookupByLibrary.simpleMessage("الصناديق والمصارف"),
         "generalanalysis":
@@ -52,17 +59,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "humanresources":
             MessageLookupByLibrary.simpleMessage("الموارد البشرية"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "nodate": MessageLookupByLibrary.simpleMessage("لايوجد تاريخ"),
+        "openningbalance":
+            MessageLookupByLibrary.simpleMessage("الرصيد الافتتاحي"),
         "passwordvalidate":
             MessageLookupByLibrary.simpleMessage("كلمة السر قصيرة جدا"),
         "purchases": MessageLookupByLibrary.simpleMessage("المشتريات"),
         "sales": MessageLookupByLibrary.simpleMessage("المبيعات"),
         "salesDebtLimit": MessageLookupByLibrary.simpleMessage("حد الدين"),
         "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "show": MessageLookupByLibrary.simpleMessage("عرض"),
         "showdetails": MessageLookupByLibrary.simpleMessage("عرض التفاصيل"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "startusingtheapp":
             MessageLookupByLibrary.simpleMessage("بدء الاستخدام"),
         "suppliers": MessageLookupByLibrary.simpleMessage("الموردون"),
+        "to": MessageLookupByLibrary.simpleMessage("الى"),
+        "total": MessageLookupByLibrary.simpleMessage("إجمالي"),
         "turnonthecameraandscan":
             MessageLookupByLibrary.simpleMessage("تشغيل الكاميرا ومسح QR"),
         "warehouse": MessageLookupByLibrary.simpleMessage("المخازن")

@@ -2,10 +2,11 @@ import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/generated/l10n.dart';
 import 'package:amwal/model/customer.dart';
 import 'package:amwal/screens/customers/presentation/acount_statment.dart';
-import 'package:amwal/widgets/black16text.dart';
-import 'package:amwal/widgets/blue16text.dart';
-import 'package:amwal/widgets/blue18text.dart';
-import 'package:amwal/widgets/orange16text.dart';
+import 'package:amwal/widgets/font/black16text.dart';
+import 'package:amwal/widgets/font/blue16text.dart';
+import 'package:amwal/widgets/font/blue18text.dart';
+import 'package:amwal/widgets/font/orange16text.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

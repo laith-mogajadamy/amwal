@@ -33,5 +33,17 @@
     "agent": "agent",
     "acounttybe": "acount tybe",
     "city": "city",
-    "acountstatment": "acount statment"
+    "acountstatment": "account statment",
+    "agentcard": "agent card",
+    "total": "total",
+    "detailed": "Detailed",
+    "nodate": "no date",
+    "from": "from",
+    "to": "to",
+    "show": "show",
+    "openningbalance": "openning balance",
+    "document": "document",
+    "date": "date",
+    "debtor": "debtor",
+    "creditor": "creditor"
 }

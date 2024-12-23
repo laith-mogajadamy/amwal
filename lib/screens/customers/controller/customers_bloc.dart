@@ -62,5 +62,26 @@ class CustomersBloc extends Bloc<CustomersEvent, CustomersState> {
         ),
       );
     });
+    on<ChangeFromDate>((event, emit) async {
+      emit(
+        state.copyWith(
+          fromdate: event.fromdate,
+        ),
+      );
+    });
+    on<ChangeToDate>((event, emit) async {
+      emit(
+        state.copyWith(
+          todate: event.todate,
+        ),
+      );
+    });
+    on<ChangeTotalFilter>((event, emit) async {
+      emit(
+        state.copyWith(
+          totalfiter: event.totalfilter,
+        ),
+      );
+    });
   }
 }

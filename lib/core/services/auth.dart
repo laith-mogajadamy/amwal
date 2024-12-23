@@ -13,6 +13,8 @@ class Auth {
       "accept_logout": "true"
     };
     var body = jsonEncode(data);
+    print("url");
+    print(Global.url);
     print("headers");
     print(Global.headers);
     var url = Uri.parse("${Global.url}/auth/login");

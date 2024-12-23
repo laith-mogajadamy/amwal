@@ -1,6 +1,5 @@
 import 'package:amwal/core/utils/appcolors.dart';
-import 'package:amwal/widgets/black16text.dart';
-import 'package:amwal/widgets/black18text.dart';
+import 'package:amwal/widgets/font/black16text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

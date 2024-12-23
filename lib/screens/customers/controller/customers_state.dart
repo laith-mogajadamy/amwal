@@ -8,6 +8,11 @@ class CustomersState extends Equatable {
   final String customerMessage;
   //
   final bool filter;
+  //
+  final String fromdate;
+  final String todate;
+  final String totalfiter;
+
   const CustomersState({
     this.token = '',
     //
@@ -17,6 +22,10 @@ class CustomersState extends Equatable {
 
     //
     this.filter = false,
+    //
+    this.fromdate = '',
+    this.todate = '',
+    this.totalfiter = '',
   });
 
   CustomersState copyWith({
@@ -28,6 +37,10 @@ class CustomersState extends Equatable {
 
     //
     bool? filter,
+    //
+    String? fromdate,
+    String? todate,
+    String? totalfiter,
   }) {
     return CustomersState(
       token: token ?? this.token,
@@ -39,6 +52,10 @@ class CustomersState extends Equatable {
 
       //
       filter: filter ?? this.filter,
+      //
+      fromdate: fromdate ?? this.fromdate,
+      todate: todate ?? this.todate,
+      totalfiter: totalfiter ?? this.totalfiter,
     );
   }
 
@@ -51,5 +68,9 @@ class CustomersState extends Equatable {
         customerMessage,
         //
         filter,
+        //
+        fromdate,
+        todate,
+        totalfiter,
       ];
 }

@@ -1,10 +1,9 @@
 import 'package:amwal/core/utils/appcolors.dart';
 import 'package:amwal/core/utils/prefrences.dart';
 import 'package:amwal/generated/l10n.dart';
-import 'package:amwal/welcome/presentation/Auth/login.dart';
-import 'package:amwal/welcome/presentation/QRcodepage.dart';
-import 'package:amwal/widgets/orange16text.dart';
-import 'package:amwal/widgets/white18text.dart';
+import 'package:amwal/welcome/presentation/qr_code_page.dart';
+import 'package:amwal/widgets/font/orange16text.dart';
+import 'package:amwal/widgets/font/white18text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
